@@ -1,6 +1,6 @@
 # FullStack-Web-Development-Specialization
 Coursera.org specialization track by The Hong Kong University of Science and Technology
-2 earned certifications
+(2 earned certifications)
 ## HTML, CSS & JS
 This course introduces these fundamental browser components:
 
