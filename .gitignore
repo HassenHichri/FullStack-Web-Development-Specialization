@@ -1,3 +1,6 @@
 .idea
 .gitignore
 /AngularJS/conFusion/bower_components/
+/AngularJS/conFusion/node_modules/
+/AngularJS/conFusion/.tmp/
+/AngularJS/conFusion/dist/
