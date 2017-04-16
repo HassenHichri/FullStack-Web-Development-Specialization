@@ -42,9 +42,9 @@
         </div>
         <div class="col-xs-9 col-xs-offset-1" ng-controller="DishCommentController">
             <blockquote ng-show = "!commentForm.$prestine && commentForm.$valid">
-                <p>{{newcomment.rating}} Stars</p>
-                <p>{{newcomment.comment}}</p>
-                <footer>{{newcomment.author}}</footer>
+                <p>{{mycomment.rating}} Stars</p>
+                <p>{{mycomment.comment}}</p>
+                <footer>{{mycomment.author}}</footer>
             </blockquote>
             <!-- <ul class="list-unstyled">
                 <p>Task 3: Here you include the code to show the live preview of the comment</p>
@@ -56,7 +56,7 @@
                     <label class = "col-xs-3 control-label" for = "UserName">
                         Your Name:
                     </label>
-                    <div class = "col-xs-9"> <input type = "text" id="UserName" name="UserName"  class= "form-control" ng-model = "newcomment.author" required>
+                    <div class = "col-xs-9"> <input type = "text" id="UserName" name="UserName"  class= "form-control" ng-model = "mycomment.author" required>
                         <span ng-show="commentForm.UserName.$error.required && !commentForm.UserName.$pristine" class="help-block">Your name is required.</span>
                     </div>
 
@@ -66,19 +66,19 @@
                     <label class = "col-xs-3 control-label"> Number of Stars: </label>
                     <div class = "col-xs-9">
                         <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" ng-model = "newcomment.rating"> 1
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" ng-model = "mycomment.rating"> 1
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2" ng-model = "newcomment.rating"> 2
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2" ng-model = "mycomment.rating"> 2
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" ng-model = "newcomment.rating"> 3
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" ng-model = "mycomment.rating"> 3
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4" ng-model = "newcomment.rating"> 4
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4" ng-model = "mycomment.rating"> 4
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5" ng-model = "newcomment.rating"> 5
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5" ng-model = "mycomment.rating"> 5
                         </label>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
 
                     <label class="control-label col-xs-3" for="UserComments">Your comments:  </label>
                     <div class = "col-xs-9">
-                        <textarea rows="10" cols="50" id="UserComments" name="UserComments"  class= "form-control" ng-model = "newcomment.comment" required></textarea>
+                        <textarea rows="10" cols="50" id="UserComments" name="UserComments"  class= "form-control" ng-model = "mycomment.comment" required></textarea>
                         <span ng-show="commentForm.UserComments.$error.required && !commentForm.UserComments.$pristine" class="help-block">Your comments are required.</span>
                     </div>
                 </div>
